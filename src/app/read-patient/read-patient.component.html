@@ -1,0 +1,33 @@
+<body>
+
+<div class="container">
+  <h2>Patient Data</h2>
+                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>FirstName</th>
+		<th>LastName</th>
+        <th>MobileNumber</th>
+        <th>Address</th>
+        <th>Email</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        <td>patient.userId</td>
+        <td>patient.firstName</td>
+        <td>patient.lastName</td>
+        <td>patient.mobileNumber</td>
+        <td>patient.address</td>
+        <td>patient.email</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</body>
+
