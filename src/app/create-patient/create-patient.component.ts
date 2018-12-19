@@ -60,7 +60,7 @@ export class CreatePatientComponent{
     if (this.myform.valid) {
 		this.createPatient();
 		console.log("Form Submitted!");
-		//this.myform.reset();
+		this.myform.reset();
     }
   }
   

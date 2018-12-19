@@ -16,7 +16,7 @@ export class HomeComponent {
   }
 
   authenticated() { 
-	if(this.app.authenticated)
+	if(this.app.authenticated && !this.user)
 		this.doGet();
 	return this.app.authenticated; 
   }

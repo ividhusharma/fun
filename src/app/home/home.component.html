@@ -1,9 +1,9 @@
-<h1>Greeting</h1>
+<h1 [hidden]="authenticated()">Hello Mate!!</h1>
 <div [hidden]="!authenticated()">
-	<p>Welcome {{user}}</p>	
-	<a routerLinkActive="active" routerLink="/create">Create Patient</a>
+	<p>Welcome <b>{{user}}</b></p>	
+	<a routerLinkActive="active" routerLink="/create">Create Patient</a>&nbsp;&nbsp;
 	<a routerLinkActive="active" routerLink="/read">Read Patients</a>
 </div>
 <div [hidden]="authenticated()">
-	<p>Login to see your greeting</p>	
+	<p>Login to see your patient list</p>	
 </div>
